@@ -1,0 +1,36 @@
+.cscroll_wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+.cscroll_content {
+	position: absolute;
+	top: 0; left: 0;
+}
+
+.cscroll_vrail {
+	position: absolute;
+	margin: auto;
+	top: 0px; bottom: 0px;
+	right: 0px;
+}
+.cscroll_vbar {
+	position: absolute;
+	margin: auto;
+	left: 0px; right: 0px;
+	top: 0px;
+}
+
+.cscroll_hrail {
+	position: absolute;
+	margin: auto;
+	left: 0px; right: 0px;
+	bottom: 0px;
+}
+.cscroll_hbar {
+	position: absolute;
+	margin: auto;
+	top: 0px; bottom: 0px;
+	left: 0px;
+}

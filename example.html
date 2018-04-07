@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scroll</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<link rel="stylesheet" type="text/css" href="cscroll.css"/>
+		<script type="text/javascript" src="cscroll.js"></script>
+		<style>
+			html, body {
+				background-color: lightgrey;
+			}
+			
+			#container {
+				position: relative;
+				width: 100vw;
+				height: 100vh;
+				
+				position: absolute;
+				margin: auto;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+			}
+
+			.cscroll_wrapper.vbar.hbar .cscroll_vrail {
+				bottom: 25px;
+			}
+			.cscroll_wrapper.vbar.hbar .cscroll_hrail {
+				right: 25px;
+			}
+
+			.cscroll_content {
+				transition: transform 100ms ease-out;
+			}
+
+			.cscroll_vrail {
+				width: 25px;
+				border-radius: 25px;
+				background-color: rgba(100,100,100,0.5);
+			}
+			.cscroll_vbar {
+				width: 25px;
+				border-radius: 25px;
+				background-color: #ffffff;
+				cursor: pointer;
+				
+				transition: transform 100ms ease-out;
+			}
+
+			.cscroll_hrail {
+				height: 25px;
+				border-radius: 25px;
+				background-color: rgba(100,100,100,0.5);
+			}
+			.cscroll_hbar {
+				height: 25px;
+				border-radius: 25px;
+				background-color: #ffffff;
+				cursor: pointer;
+				
+				transition: transform 100ms ease-out;
+			}
+
+			img {
+				display: block;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+		
+			<div class="cscroll_wrapper">
+				<div class="cscroll_content">
+					<img src="test-image.jpg"/>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script>
+		window.addEventListener("load", function() {
+			var container = document.querySelector(".cscroll_wrapper");
+			var scroll = new CustomScroll(container);
+		});
+	</script>
+</html>
